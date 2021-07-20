@@ -3,7 +3,7 @@ from email.mime.text import MIMEText
 from setup import *
 
 
-def send_email(content, title):
+def send_email(title, content):
     message = MIMEText(content, 'plain', 'utf-8')
     message['Subject'] = title
     message['From'] = sender
@@ -19,3 +19,7 @@ def send_email(content, title):
     except smtplib.SMTPException as e:
         print(e)
         send_email(content, title)
+
+
+def template(stock_name, stock_id):
+    pass

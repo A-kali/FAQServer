@@ -1,13 +1,7 @@
+from mail import send_email
 
-#设置服务器所需信息
-#163邮箱服务器地址
-
-
-
-
-# try:
-#
-# except smtplib.SMTPException as e:
-#     print('error',e) #打印错误
+title = '【宁德时代】买入建议'
+text = "您关注的股票【300750 宁德时代】可以执行买入操作，当前价格【528.04】，建议入场价【539.27】，建议仓位【42%】，可购买【100】股"
+send_email(title, text)
 
 
